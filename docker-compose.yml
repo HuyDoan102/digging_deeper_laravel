@@ -9,7 +9,7 @@ services:
       # - 443:443
     command: sh /init.sh
     volumes:
-      - ./:/var/www/html/digging_deeper_laravel
+      - ./:/var/www/html
       - ./docker/vhost.conf:/etc/apache2/sites-available/000-default.conf
       - ./docker/init.sh:/init.sh
       - ./docker/logs/apache2:/var/log/apache2
@@ -17,11 +17,11 @@ services:
       - mysql
 
   mysql:
-    image: mysql
+    image: mysql:5.7
     ports:
       - 6603:3306
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: deeper
       MYSQL_USER: deeper
-      MYSQL_PASSWORD: deeper
+      MYSQL_PASSWORD: 123456

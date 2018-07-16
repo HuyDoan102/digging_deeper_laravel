@@ -21,3 +21,5 @@
 172.18.0.1 - - [16/Jul/2018:11:56:56 +0000] "GET /register HTTP/1.1" 200 2221 "http://localhost:8000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
 172.18.0.1 - - [16/Jul/2018:11:56:56 +0000] "GET /css/app.css HTTP/1.1" 200 21208 "http://localhost:8000/register" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
 172.18.0.1 - - [16/Jul/2018:11:56:56 +0000] "GET /js/app.js HTTP/1.1" 200 111902 "http://localhost:8000/register" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.18.0.1 - - [16/Jul/2018:12:47:22 +0000] "GET /favicon.ico HTTP/1.1" 200 296 "http://127.0.0.1:8000/user" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.18.0.1 - - [16/Jul/2018:12:50:27 +0000] "GET / HTTP/1.1" 200 1864 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"

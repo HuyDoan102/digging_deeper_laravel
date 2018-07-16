@@ -7,21 +7,18 @@ RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 RUN LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
 RUN apt-get update
 
-# Upgrade PHP 7.2
-RUN apt-get install php7.2 php7.2-xml php7.2-cli php7.2-common php7.2-json php7.2-mysql php7.2-mbstring php7.2-zip libapache2-mod-php7.2 -y
+# Upgrade PHP 7.1
+RUN apt-get install php7.1 php7.1-xml php7.1-cli php7.1-common php7.1-json php7.1-mysql php7.1-mbstring php7.1-mcrypt php7.1-zip libapache2-mod-php7.1 -y
 
 # Enable Apache2 Modules
 RUN a2dismod php7.0
-RUN a2enmod php7.2
+RUN a2enmod php7.1
 RUN a2enmod rewrite
 RUN a2enmod headers
 RUN service apache2 restart
 
 # Install git
 RUN apt-get install git -y
-
-# Install supervisor
-RUN apt-get install supervisor
 
 # Create User
 ARG APP_USER=deeper
