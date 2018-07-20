@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DOCUMENT_ROOT="/var/www/html"
+DOCUMENT_ROOT="/var/www/html/digging_deeper_laravel"
 
 echo $DOCUMENT_ROOT
 

@@ -38,4 +38,4 @@ RUN chown -R ${APP_USER}:${APP_USER} /var/www/html
 
 ENV HOME /home/${APP_USER}
 
-WORKDIR /var/www/html
+WORKDIR /var/www/html/digging_deeper_laravel
